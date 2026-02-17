@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buku Ramadhan Spesial</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(rgba(20,100,40,0.85), rgba(180,200,50,0.85)),
+    url('https://images.unsplash.com/photo-1589987607627-4bfa4d4d7a8e?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+header {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe600;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    max-width: 550px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #ffe600;
+    color: #145c2d;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
+
+.hero-img img {
+    width: 350px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.stars img {
+    position: absolute;
+    width: 40px;
+    opacity: 0.8;
+    animation: twinkle 3s infinite alternate;
+}
+
+@keyframes twinkle {
+    from { opacity: 0.3; }
+    to { opacity: 1; }
+}
+
+.ketupat {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgba(0,0,0,0.3);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Buku Ramadhan</div>
+    <nav>
+        <a href="#">Tentang</a>
+        <a href="#">Isi Buku</a>
+        <a href="#">Testimoni</a>
+        <a href="#">Beli</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Temukan Makna Ramadhan yang Lebih Dalam</h1>
+        <p>
+            Buku inspiratif yang membimbing Anda menjalani Ramadhan dengan hati yang lebih tenang,
+            ibadah lebih khusyuk, dan penuh keberkahan.
+        </p>
+        <a href="#" class="btn">Pesan Sekarang</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="https://pngimg.com/uploads/book/book_PNG2115.png" alt="Cover Buku">
+    </div>
+</section>
+
+<!-- Bintang-bintang -->
+<div class="stars">
+    <img src="https://pngimg.com/uploads/star/star_PNG1592.png" style="top:10%; left:20%;">
+    <img src="https://pngimg.com/uploads/star/star_PNG1592.png" style="top:30%; left:70%;">
+    <img src="https://pngimg.com/uploads/star/star_PNG1592.png" style="top:60%; left:40%;">
+</div>
+
+<!-- Ketupat -->
+<img class="ketupat" src="https://pngimg.com/uploads/ketupat/ketupat_PNG16.png" alt="Ketupat">
+
+<footer>
+    © 2026 Buku Ramadhan Inspiratif | Semua Hak Dilindungi
+</footer>
+
+</body>
+</html>
